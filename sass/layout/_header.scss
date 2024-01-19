@@ -51,13 +51,13 @@
 }*/
 
 
-.esin ul{
+.stage ul{
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 4rem;
 }
+
 
 .line{
     color: white;
@@ -74,11 +74,17 @@
     height: 40px;
     border-radius: 20px;
     background-color: #e2e7e9 ;
-    color: white;
     text-align: center;
 }
-ul li:first-child{
+
+ul li:nth-child(2){
     background-color: #51b549;
+}
+
+
+ul span{
+    position: absolute;
+    left: 10rem;
 }
 
 
@@ -131,6 +137,7 @@ input[type=text], select {
     border: 2px solid rgb(212, 211, 211);
     border-radius: 5px;
     padding: 20px;
+    margin-bottom: 50px;
   }
 
   textarea {
@@ -147,9 +154,9 @@ input[type=text], select {
 
 
   .sipariş-card{
-    border: 1px solid rgb(210, 210, 210);
+    border: 2px solid rgb(210, 210, 210);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
   }
 
   .total{
@@ -159,7 +166,7 @@ input[type=text], select {
   }
 
   .kod-kupon input{
-    width: 80%;
+    width: 78%;
   }
 
   .kod-kupon button{
@@ -174,10 +181,15 @@ input[type=text], select {
   .forward{
     background-color: #51b549;
     border: 0;
-    width: 20rem;
+    width: 18rem;
     color: white;
     height: 45px;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-bottom: 20px;
   }
+
+  .right-icon{
+    float: right;
+  }
+
 

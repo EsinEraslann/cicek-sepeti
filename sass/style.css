@@ -48,12 +48,11 @@
     background-color: red;
     height: 5px;
 }*/
-.esin ul {
+.stage ul {
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 4rem;
 }
 
 .line {
@@ -70,12 +69,16 @@
   height: 40px;
   border-radius: 20px;
   background-color: #e2e7e9;
-  color: white;
   text-align: center;
 }
 
-ul li:first-child {
+ul li:nth-child(2) {
   background-color: #51b549;
+}
+
+ul span {
+  position: absolute;
+  left: 10rem;
 }
 
 .dot-2 {
@@ -128,6 +131,7 @@ input[type=submit]:hover {
   border: 2px solid rgb(212, 211, 211);
   border-radius: 5px;
   padding: 20px;
+  margin-bottom: 50px;
 }
 
 textarea {
@@ -143,9 +147,9 @@ textarea {
 }
 
 .sipariş-card {
-  border: 1px solid rgb(210, 210, 210);
+  border: 2px solid rgb(210, 210, 210);
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .total {
@@ -155,7 +159,7 @@ textarea {
 }
 
 .kod-kupon input {
-  width: 80%;
+  width: 78%;
 }
 
 .kod-kupon button {
@@ -170,9 +174,13 @@ textarea {
 .forward {
   background-color: #51b549;
   border: 0;
-  width: 20rem;
+  width: 18rem;
   color: white;
   height: 45px;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 20px;
+}
+
+.right-icon {
+  float: right;
 }/*# sourceMappingURL=style.css.map */
