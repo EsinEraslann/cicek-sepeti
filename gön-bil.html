@@ -46,17 +46,19 @@
             <div class="row">
                 <div class="col-12 col-md-8">
                     <div class="sender-form">
-                        <form action="">
-                            <input type="text" id="fname" name="firstname" placeholder="Sender Name Surname">
-                            <input type="text" id="lname" name="lastname" placeholder="Sender Email">
-                            <input type="text" id="fname" name="firstname" placeholder="Sender Phone Number">
-                            <a href="">Fatura bilgilerimi düzenle<i class="fa-solid fa-angle-down"></i></a>
+                        <form class="esin" action="">
+                            <input type="text" id="fname" name="firstname" placeholder="&#xf007; Sender Name Surname" style="font-family:Arial, FontAwesome;">
+                            <input type="text" id="email" name="email" placeholder="&#xf0e0; Sender Email" style="font-family:Arial, FontAwesome;">
+                            <input type="text" id="telno" name="telno" placeholder="&#xf3cf; Sender Phone Number" style="font-family:Arial, FontAwesome;">
+                           <div><a href="">Edit my billing information<i class="fa-solid fa-angle-down"></i></a></div> 
                             <input type="radio" id="html" name="fav_language" value="HTML">
-                              <label for="html">HTML</label>
+                              <label for="html">On behalf of the person</label>
                               <input type="radio" id="css" name="fav_language" value="CSS">
-                              <label for="css">CSS</label>
-                            <label for="">Address</label>
-                            <textarea>Address</textarea>
+                              <label for="css">On behalf of the company</label>
+                            <div class="mt-4">
+                            <label for="address">Address</label>
+                            <textarea id="address" name="address" rows="2" cols="50" placeholder="Address"></textarea>
+                        </div>
                         </form>
 
                     </div>
@@ -73,10 +75,8 @@
                         <h4 class="text-center">Order Summary</h4>
                         <div class="total">Subtotal (1 Product) 899,00 TL</div>
                         <div class="kod-kupon">
-                            <input type="text" id="fname" name="firstname" placeholder="Enter Code">
-                            <span>
+                            <input type="text" class="entercode" name="entercode" placeholder="Enter Code">
                                 <button>Use</button>
-                            </span>
                         </div>
                         <div class="total">Total: 899,00 TL</div>
 
