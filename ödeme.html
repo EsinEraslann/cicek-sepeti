@@ -41,81 +41,87 @@
     </div>
 
 
+
     <section>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-8">
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Kredi Kartı / Banka Kartı</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Havale</button>
-                                </li>
-                              </ul>
-                              <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">merhaba</div>
-                                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">selam</div>
-                              </div>
-                    <!--   <div>
-                                <label for="ccnum">Credit card number</label>
-                                <input class="w-50" type="text" id="ccnum" name="cardnumber">
-                            </div>
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                                aria-selected="true">Credit Card / Debit Card</button>
+                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                                aria-selected="false">Transfer</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab" tabindex="0">
                             <div>
-                                <label>Credit card number</label>
-                                <select>
-                                    <option value="0">Select car:</option>
-                                    <option value="1">Audi</option>
-                                    <option value="2">BMW</option>
-                                    <option value="3">Citroen</option>
-                                    <option value="4">Ford</option>
-                                    <option value="5">Honda</option>
-                                    <option value="6">Jaguar</option>
-                                    <option value="7">Land Rover</option>
-                                    <option value="8">Mercedes</option>
-                                    <option value="9">Mini</option>
-                                    <option value="10">Nissan</option>
-                                    <option value="11">Toyota</option>
-                                    <option value="12">Volvo</option>
-                                  </select>
-                                  <select>
-                                    <option value="0">Select car:</option>
-                                    <option value="1">Audi</option>
-                                    <option value="2">BMW</option>
-                                    <option value="3">Citroen</option>
-                                    <option value="4">Ford</option>
-                                    <option value="5">Honda</option>
-                                    <option value="6">Jaguar</option>
-                                    <option value="7">Land Rover</option>
-                                    <option value="8">Mercedes</option>
-                                    <option value="9">Mini</option>
-                                    <option value="10">Nissan</option>
-                                    <option value="11">Toyota</option>
-                                    <option value="12">Volvo</option>
-                                  </select>
-                             </div>-->
+                                <div class="credit-part">
+                                    <label for="ccnum">Card Number</label>
+                                    <input type="text" id="ccnum" name="cardnumber">
+                                </div>
+                                <div>
+                                    <label>Expiration Date</label>
+                                    <select>
+                                        <option value="0">Oh</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                    <select>
+                                        <option value="0">Year</option>
+                                        <option value="1">24</option>
+                                        <option value="2">25</option>
+                                        <option value="3">26</option>
+                                    </select>
+                                </div> <!--select finish-->
+                            </div>
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <label for="vehicle1">Preliminary Information Form (1) and Distance Sales Agreement (2) I
+                                have read and accept.</label>
+                            <div><button>Pay</button></div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                            <div class="transfer-part">
+                            <select>
+                                <option value="0">Select Bank</option>
+                                <option value="1">Garanti Bank</option>
+                                <option value="2">Yapı Kredi Bank</option>
+                                <option value="3">Akbank</option>
+                                <option value="4">Isbank</option>
+                            </select>
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <label for="vehicle1">Preliminary Information Form (1) and Distance Sales Agreement (2) I
+                                have read and accept.</label>
+                            <div><button>Order</button></div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
-                        Toplam 899,00 TL
                     </div>
-                </div>
+                </div><!--firstnav finish-->
                 <div class="col-12 col-md-4">
                     <div class="sipariş-card">
                         <h4 class="text-center">Order Summary</h4>
-                        <div class="total mb-2">Subtotal (1 Product) 899,00 TL</div>
-                        <div class="total">Total: 899,00 TL</div>
+                        <div class="total">Subtotal (1 Product) 899,00 TL</div>
+                        <div class="total mt-3">Total: 899,00 TL</div>
+
                     </div>
                 </div>
-            </div>
-        </div>
+            </div><!--row finish-->
+        </div><!--container finish-->
     </section>
-
-
-
-
 
 
 
