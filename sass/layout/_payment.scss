@@ -1,20 +1,24 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
+
+
 .price-box {
-    background-color: #edf1f2;
+    background-color: v.$color-secondary;
+    border: v.$border;
+    border-radius: v.$bor-radius;
     width: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid grey;
-    border-radius: 5px;
     margin: 25px 10px;
 }
 
 #nav-home-tab {
-    color: #51b549;
+    color: v.$color-primary;
 }
 
 #nav-profile-tab {
-    color: #51b549;
+    color: v.$color-primary;
 }
 
 
@@ -41,17 +45,15 @@
 
 
 .total-pay {
+    @include m.center-vertical;
     margin-top: 25px;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     button {
         color: white;
-        background-color: #51b549;
+        background-color: v.$color-primary;
         border: 0;
-        border-radius: 5px;
+        border-radius: v.$bor-radius;
         padding: 10px 80px;
         font-size: 20px;
     }
@@ -61,7 +63,7 @@
     }
 
     span {
-        color: #51b549;
+        color: v.$color-primary;
         font-size: 25px;
     }
 }
@@ -81,21 +83,19 @@ table {
 }
 
 .part-3 {
-    background-color: #51b549;
+    background-color: v.$color-primary;
 }
 
 .last-payment {
+    @include m.center-vertical;
     margin-top: 25px;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     .test {
         color: white;
-        background-color: #51b549;
+        background-color: v.$color-primary;
         border: 0;
-        border-radius: 5px;
+        border-radius: v.$bor-radius;
         padding: 10px 80px;
         font-size: 20px;
     }
@@ -105,22 +105,22 @@ table {
     }
 
     span {
-        color: #51b549;
+        color: v.$color-primary;
         font-size: 25px;
     }
 }
 
 .modal-footer {
     .later {
-        color: #51b549;
+        color: v.$color-primary;
         font-size: 18px;
     }
 
     .allow {
         color: white;
-        background-color: #51b549;
+        background-color: v.$color-primary;
         border: 0;
-        border-radius: 5px;
+        border-radius: v.$bor-radius;
         padding: 10px 50px;
         font-size: 18px;
     }

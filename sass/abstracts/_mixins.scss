@@ -2,5 +2,15 @@
     width: 40px;
     height: 40px;
     border-radius: 20px;
-    background-color: #edf1f2;
+}
+
+@mixin center{
+    display: flex;
+    justify-content: center;
+}
+
+@mixin center-vertical{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

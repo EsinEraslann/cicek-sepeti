@@ -1,180 +1,171 @@
-.logo img{
-    width: 150px;
-    padding-top: 20px;
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
+
+
+
+.logo img {
+  width: 150px;
+  padding-top: 20px;
 }
 
-.logo{
-    display: flex;
-    justify-content: center;
+.logo {
+  @include m.center;
 }
 
-.back{
+.back {
   padding-left: 5rem;
 }
 
 
-.stage{
+.stage {
   position: relative;
-}
 
-
-.stage ul{
+  ul{
+    @include m.center;
     list-style: none;
-    display: flex;
     flex-direction: row;
-    justify-content: center;
+  }
 
-   
+  li span {
+    font-size: 15px;
+    position: absolute;
+    bottom: -30px;
+  }
 
-    li span{
-      font-size: 15px;
-      position: absolute;
-      bottom: -30px;
-    }
-}
-
-
-.line{
+  .line {
     border: 0;
-    background-color: #abaaaa;
+    background-color: v.$color-secondary;
     height: 5px;
     width: 7rem;
     display: flex;
     align-items: center;
+  }
+}
+
+.dot-1 {
+  @include m.dots;
+  text-align: center;
+  background-color: v.$color-primary;
 }
 
 
-.dot-1{
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    text-align: center;
-    background-color: #51b549;
+
+.dot-2 {
+  @include m.dots;
+  background-color: v.$color-secondary;
 }
 
 
+.dot-3 {
+  @include m.dots;
+  background-color: v.$color-secondary;
+}
 
-.dot-2{
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: #e2e7e9 ;
+.dot-4 {
+  @include m.dots;
+  background-color: v.$color-secondary;
 }
 
 
-.dot-3{
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: #e2e7e9 ;
-}
-.dot-4{
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: #e2e7e9 ;
+input[type=text],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: v.$border;
+  border-radius: v.$bor-radius;
+  box-sizing: border-box;
 }
 
+input[type=submit] {
+  width: 100%;
+  background-color: v.$color-primary;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: v.$bor-radius;
+  cursor: pointer;
+}
 
-input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
- .home-form{
-    border: 2px solid rgb(233, 232, 232);
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 50px;
-  }
+input[type=submit]:hover {
+  background-color: v.$color-primary;
+}
 
-  form textarea {
-    width: 100%;
-    height: 150px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    resize: none;
-  }
+.home-form {
+  border: v.$border;
+  border-radius: v.$bor-radius;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+form textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: v.$border;
+  border-radius: v.$bor-radius;
+  font-size: 16px;
+  resize: none;
+}
 
 
-  .sipariş-card{
-    border: 1px solid #d2d2d2;
-    padding: 20px;
-    border-radius: 5px;
-  }
+.sipariş-card {
+  border: v.$border;
+  padding: 20px;
+  border-radius: v.$bor-radius;
 
-  .total{
+  .total {
     background-color: #e7e9ea;
     padding: 13px;
-    border-radius: 5px;
+    border-radius: v.$bor-radius;
     display: flex;
     justify-content: space-between;
   }
+}
 
-  .kod-kupon{
-    display: flex;
-    align-items: center;
-    width: 100%;
-  }
 
-  .kod-kupon input{
+
+.kod-kupon {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  input {
     border-radius: 5px 0 0 5px;
     width: 100%;
     padding: 15px;
   }
-
-  .kod-kupon button{
+  
+  button {
     padding: 16px 12px;
     border-radius: 0 5px 5px 0;
-    background-color: rgb(232, 127, 41);
+    background-color: v.$color-third;
     color: white;
     border: none;
     width: 50%;
-    display: flex;
-    justify-content: center;
+    @include m.center;
   }
+}
 
-  .forward-button{
-    display: flex;
-    justify-content: center;
-  }
 
-  .forward{
-    background-color: #51b549;
+.forward-button {
+  @include m.center;
+
+  .forward {
+    background-color: v.$color-primary;
     border: 0;
     width: 18rem;
     color: white;
     height: 45px;
-    border-radius: 5px;
+    border-radius: v.$bor-radius;
     margin-bottom: 20px;
   }
+}
 
-  .right-icon{
-    float: right;
-    color: white;
-  }
-
-
+.right-icon {
+  float: right;
+  color: white;
+}

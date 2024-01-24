@@ -1,7 +1,11 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
+
+
 .form-group a {
     color: black;
 }
 
 .part-2 {
-    background-color: #51b549;
+    background-color: v.$color-primary;
 }

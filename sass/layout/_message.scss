@@ -1,13 +1,17 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
+
+
+
 .message{
-    display: flex;
+    @include m.center-vertical;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
     width: 30rem;
 
     textarea{
-        border: 1px solid #d5d2d2;
-        border-radius: 5px;
+        width: 100%;
+        border: v.$border;
+        border-radius: v.$bor-radius;
         padding: 10px;
     }
 }
@@ -15,9 +19,9 @@
 .message-buttons{
     button{
         border: 0;
-        background-color: #e27c33 ;
+        background-color: v.$color-third ;
         color: white;
-        border-radius: 5px;
+        border-radius: v.$bor-radius;
         padding: 14px 20px;
         font-size: 18px;
 
