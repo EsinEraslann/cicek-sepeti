@@ -13,46 +13,6 @@
   padding-left: 5rem;
 }
 
-/*hr{
-    color: #c2c8c9 ;
-    border: 1px solid;
-}*/
-/*.circles{
-    display: flex;
-    flex-direction: row;
-}
-
-
-.circle-1{
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: red;
-}
-.circle-2{
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: red;
-}
-.circle-3{
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: red;
-}
-.circle-4{
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: red;
-}
-
-.line-1{
-    width: 50px;
-    background-color: red;
-    height: 5px;
-}*/
 .stage {
   position: relative;
 }
@@ -338,6 +298,11 @@ table tr {
   text-align: center;
   width: 30rem;
 }
+.message textarea {
+  border: 1px solid #d5d2d2;
+  border-radius: 5px;
+  padding: 10px;
+}
 
 .message-buttons button {
   border: 0;
@@ -346,4 +311,8 @@ table tr {
   border-radius: 5px;
   padding: 14px 20px;
   font-size: 18px;
+}
+
+a {
+  color: black;
 }/*# sourceMappingURL=style.css.map */

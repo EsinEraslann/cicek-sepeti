@@ -1,5 +1,3 @@
-
-
 .price-box {
     background-color: #edf1f2;
     width: 10rem;
@@ -11,12 +9,12 @@
     margin: 25px 10px;
 }
 
-#nav-home-tab{
-    color: #51b549 ;
+#nav-home-tab {
+    color: #51b549;
 }
 
-#nav-profile-tab{
-    color: #51b549 ;
+#nav-profile-tab {
+    color: #51b549;
 }
 
 
@@ -29,7 +27,7 @@
     width: 100%;
     border-collapse: collapse;
     margin-top: 15px;
-  }
+}
 
 #payment-method-information>div {
     display: none;
@@ -42,14 +40,14 @@
 }
 
 
-.total-pay{
+.total-pay {
     margin-top: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    button{
+    button {
         color: white;
         background-color: #51b549;
         border: 0;
@@ -58,42 +56,42 @@
         font-size: 20px;
     }
 
-    p{
+    p {
         font-size: 20px;
     }
 
-    span{
+    span {
         color: #51b549;
         font-size: 25px;
     }
 }
 
-.warning-text{
+.warning-text {
     color: red;
     margin-top: 20px;
 }
 
-table{
+table {
     font-size: 15px;
-   transform: translateX(40px);
-   
-   tr{
-    display: flex;
-   }
+    transform: translateX(40px);
+
+    tr {
+        display: flex;
+    }
 }
 
-.part-3{
+.part-3 {
     background-color: #51b549;
 }
 
-.last-payment{
+.last-payment {
     margin-top: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    .test{
+    .test {
         color: white;
         background-color: #51b549;
         border: 0;
@@ -102,22 +100,23 @@ table{
         font-size: 20px;
     }
 
-    p{
+    p {
         font-size: 20px;
     }
 
-    span{
+    span {
         color: #51b549;
         font-size: 25px;
     }
 }
 
-.modal-footer{
-    .later{
+.modal-footer {
+    .later {
         color: #51b549;
         font-size: 18px;
     }
-    .allow{
+
+    .allow {
         color: white;
         background-color: #51b549;
         border: 0;

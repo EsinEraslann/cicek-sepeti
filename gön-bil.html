@@ -46,16 +46,16 @@
                 <div class="col-12 col-md-8">
                     <div class="sender-form">
                         <form class="form-group" action="">
-                            <input type="text" id="fname" name="firstname" placeholder="&#xf007; Sender Name Surname"
-                                style="font-family:Arial, FontAwesome;">
+                            <input type="text" id="fname" name="firstname" placeholder="&#xf007; Sender Name Surname "
+                                style="font-family:Arial, FontAwesome;" required>
                             <input type="text" id="email" name="email" placeholder="&#xf0e0; Sender Email"
-                                style="font-family:Arial, FontAwesome;">
+                                style="font-family:Arial, FontAwesome;" required>
                             <input type="text" id="telno" name="telno" placeholder="&#xf3cf; Sender Phone Number"
-                                style="font-family:Arial, FontAwesome;">
+                                style="font-family:Arial, FontAwesome;" required>
                             <div><a href="">Edit my billing information<i class="fa-solid fa-angle-down"></i></a></div>
-                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <input type="radio" id="html" name="fav_language" value="HTML" required>
                               <label for="html">On behalf of the person</label>
-                              <input type="radio" id="css" name="fav_language" value="CSS">
+                              <input type="radio" id="css" name="fav_language" value="CSS" required>
                               <label for="css">On behalf of the company</label>
                             <div class="mt-4">
                                 <label for="address">Address</label>
@@ -63,10 +63,9 @@
                                     placeholder="Address"></textarea>
                             </div>
                         </form>
-
                     </div>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 sender-button">
                     <div class="forward-button">
                         <a href="ödeme.html">
                             <button class="forward">
