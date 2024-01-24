@@ -29,10 +29,10 @@
             <span><i class="fa-solid fa-angle-left"></i><a class="text-dark ps-3" href="gön-bil.html">Geri</a></span>
             <ul>
                 <li class="dot-1"><span>Order Information</span></li>
-                <hr class="line">
-                <li class="dot-2"><span>Sender Information</span></li>
-                <hr class="line">
-                <li class="dot-3"><span>Payment</span></li>
+                <hr class="line part-2">
+                <li class="dot-2 part-2"><span>Sender Information</span></li>
+                <hr class="line part-3">
+                <li class="dot-3 part-3"><span>Payment</span></li>
                 <hr class="line">
                 <li class="dot-4"><span>Message Card</span></li>
             </ul>
@@ -64,34 +64,34 @@
                                     <input type="text" id="ccnum" name="cardnumber">
                                 </div>
                                 <div>
-                                  <label>Expiration Date</label>
-                                  <div class="row">
-                                  <div class="col">
-                                    <select>
-                                        <option value="0">Months</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                        <option value="12">12</option>
-                                    </select>
-                                </div>
-                                <div class="col">
-                                    <select>
-                                        <option value="0">Year</option>
-                                        <option value="1">24</option>
-                                        <option value="2">25</option>
-                                        <option value="3">26</option>
-                                    </select>
-                                </div>
-                            </div>
+                                    <label>Expiration Date</label>
+                                    <div class="row">
+                                        <div class="col">
+                                            <select>
+                                                <option value="0">Months</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                        </div>
+                                        <div class="col">
+                                            <select>
+                                                <option value="0">Year</option>
+                                                <option value="1">24</option>
+                                                <option value="2">25</option>
+                                                <option value="3">26</option>
+                                            </select>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-check">
@@ -205,7 +205,8 @@
                                     </table>
                                 </div>
                             </div>
-                            <p class="warning-text">We kindly request that you specify your order number 367678615 in the description field
+                            <p class="warning-text">We kindly request that you specify your order number 367678615 in
+                                the description field
                                 when completing your payment.</p>
                             <p>After completing your payment, your transaction will be confirmed within approximately
                                 15-20 minutes. <br>
@@ -218,9 +219,26 @@
                                 <label class="form-check-label" for="exampleCheck1">I have read and accept the
                                     Preliminary Information Form (1) and Distance Sales Agreement (2) .</label>
                             </div>
-                            <div class="total-pay">
+                            <div class="last-payment">
                                 <p>Total:<span> 899,00 TL</span> </p>
-                                <button>Pay</button>
+                               <button class="test" data-bs-toggle="modal" data-bs-target="#exampleModal">Pay</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body pt-5">
+                                                Allow to be instantly informed about Çiçeksepeti's special offers and current deals.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a href="message.html"><button type="button" class="btn later"
+                                                    data-bs-dismiss="modal">Later</button></a>
+                                                <button type="button" class="btn allow">Allow</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
 
                             <!--    <div class="transfer-part">
@@ -242,8 +260,14 @@
                 <div class="col-12 col-md-4 mt-5 mt-md-0">
                     <div class="sipariş-card">
                         <h4 class="text-center">Order Summary</h4>
-                        <div class="total">Subtotal (1 Product) 899,00 TL</div>
-                        <div class="total mt-3">Total: 899,00 TL</div>
+                        <div class="total">
+                            <div>Subtotal (1 Product)</div>
+                            <div>899,00 TL</div>
+                        </div>
+                        <div class="total mt-3">
+                            <div>Total:</div>
+                            <div>899,00 TL</div>
+                        </div>
 
                     </div>
                 </div>

@@ -10,7 +10,7 @@
 }
 
 .back {
-  padding-left: 10rem;
+  padding-left: 5rem;
 }
 
 /*hr{
@@ -70,7 +70,7 @@
 }
 
 .line {
-  color: white;
+  border: 0;
   background-color: #abaaaa;
   height: 5px;
   width: 7rem;
@@ -139,7 +139,7 @@ input[type=submit]:hover {
   margin-bottom: 50px;
 }
 
-textarea {
+form textarea {
   width: 100%;
   height: 150px;
   padding: 12px 20px;
@@ -160,6 +160,8 @@ textarea {
   background-color: #e7e9ea;
   padding: 13px;
   border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .kod-kupon {
@@ -207,6 +209,10 @@ textarea {
 
 .form-group a {
   color: black;
+}
+
+.part-2 {
+  background-color: #51b549;
 }
 
 .price-box {
@@ -283,4 +289,61 @@ table {
 }
 table tr {
   display: flex;
+}
+
+.part-3 {
+  background-color: #51b549;
+}
+
+.last-payment {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.last-payment .test {
+  color: white;
+  background-color: #51b549;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 80px;
+  font-size: 20px;
+}
+.last-payment p {
+  font-size: 20px;
+}
+.last-payment span {
+  color: #51b549;
+  font-size: 25px;
+}
+
+.modal-footer .later {
+  color: #51b549;
+  font-size: 18px;
+}
+.modal-footer .allow {
+  color: white;
+  background-color: #51b549;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 50px;
+  font-size: 18px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 30rem;
+}
+
+.message-buttons button {
+  border: 0;
+  background-color: #e27c33;
+  color: white;
+  border-radius: 5px;
+  padding: 14px 20px;
+  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */

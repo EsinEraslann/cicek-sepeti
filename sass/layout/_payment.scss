@@ -82,3 +82,47 @@ table{
    }
 }
 
+.part-3{
+    background-color: #51b549;
+}
+
+.last-payment{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .test{
+        color: white;
+        background-color: #51b549;
+        border: 0;
+        border-radius: 5px;
+        padding: 10px 80px;
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    span{
+        color: #51b549;
+        font-size: 25px;
+    }
+}
+
+.modal-footer{
+    .later{
+        color: #51b549;
+        font-size: 18px;
+    }
+    .allow{
+        color: white;
+        background-color: #51b549;
+        border: 0;
+        border-radius: 5px;
+        padding: 10px 50px;
+        font-size: 18px;
+    }
+}

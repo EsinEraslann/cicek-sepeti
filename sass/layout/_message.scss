@@ -1,0 +1,19 @@
+.message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 30rem;
+}
+
+.message-buttons{
+    button{
+        border: 0;
+        background-color: #e27c33 ;
+        color: white;
+        border-radius: 5px;
+        padding: 14px 20px;
+        font-size: 18px;
+
+    }
+}
