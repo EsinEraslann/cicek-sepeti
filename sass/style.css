@@ -1,11 +1,16 @@
 @charset "UTF-8";
 .logo img {
   width: 150px;
+  padding-top: 20px;
 }
 
 .logo {
   display: flex;
   justify-content: center;
+}
+
+.back {
+  padding-left: 10rem;
 }
 
 /*hr{
@@ -48,11 +53,20 @@
     background-color: red;
     height: 5px;
 }*/
+.stage {
+  position: relative;
+}
+
 .stage ul {
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+.stage ul li span {
+  font-size: 15px;
+  position: absolute;
+  bottom: -30px;
 }
 
 .line {
@@ -68,17 +82,8 @@
   width: 40px;
   height: 40px;
   border-radius: 20px;
-  background-color: #e2e7e9;
   text-align: center;
-}
-
-.stage ul li:nth-child(2) {
   background-color: #51b549;
-}
-
-ul span {
-  position: absolute;
-  left: 10rem;
 }
 
 .dot-2 {
@@ -197,6 +202,11 @@ textarea {
 
 .right-icon {
   float: right;
+  color: white;
+}
+
+.form-group a {
+  color: black;
 }
 
 .price-box {
@@ -210,7 +220,67 @@ textarea {
   margin: 25px 10px;
 }
 
+#nav-home-tab {
+  color: #51b549;
+}
+
+#nav-profile-tab {
+  color: #51b549;
+}
+
 .stage li {
   display: flex;
   align-items: end;
+}
+
+#payment-method-information table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+#payment-method-information > div {
+  display: none;
+}
+
+#payment-method-information.garanti > div#garanti,
+#payment-method-information.yapi-kredi > div#yapi-kredi,
+#payment-method-information.akbank > div#akbank {
+  display: block;
+}
+
+.total-pay {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.total-pay button {
+  color: white;
+  background-color: #51b549;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 80px;
+  font-size: 20px;
+}
+.total-pay p {
+  font-size: 20px;
+}
+.total-pay span {
+  color: #51b549;
+  font-size: 25px;
+}
+
+.warning-text {
+  color: red;
+  margin-top: 20px;
+}
+
+table {
+  font-size: 15px;
+  transform: translateX(40px);
+}
+table tr {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

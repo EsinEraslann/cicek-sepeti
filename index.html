@@ -7,7 +7,9 @@
     <title>Çiçek Sepeti</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="sass/style.css">
 </head>
 
@@ -18,25 +20,22 @@
             <img src="logo-cicek-sepeti.png" alt="...">
         </a>
     </div>
-    width verince bozuluyor
+
     <hr>
-
-<div class="container">
-
-    <div class="stage mb-5">
-        
-        <ul>
-           <span><i class="fa-solid fa-angle-left"></i><a class="text-dark ps-3" href="#">Geri</a></span> 
-            <li class="dot-1">Ödeme</li>
-            <hr class="line">
-            <li class="dot-2">Ödeme</li>
-            <hr class="line">
-            <li class="dot-3">Ödeme</li>
-            <hr class="line">
-            <li class="dot-4">Ödeme</li>
-        </ul>
+    <span class="back"><i class="fa-solid fa-angle-left"></i><a class="text-dark ps-3" href="#">Geri</a></span>
+    <div class="container">
+        <div class="stage mb-5">
+            <ul>
+                <li class="dot-1"><span>Order Information</span></li>
+                <hr class="line">
+                <li class="dot-2"><span>Sender Information</span></li>
+                <hr class="line">
+                <li class="dot-3"><span>Payment</span></li>
+                <hr class="line">
+                <li class="dot-4"><span>Message Card</span></li>
+            </ul>
+        </div>
     </div>
-</div>
 
     <section>
         <div class="container">
@@ -44,8 +43,11 @@
                 <div class="col-12 col-md-8">
                     <div class="home-form">
                         <form action="">
-                            <input type="text" id="fname" name="firstname" placeholder="&#xf004; Recipient's Name and Surname" style="font-family:Arial, FontAwesome;">
-                            <input type="text" id="telno" name="telno" placeholder="&#xf3cf; Recipient's Phone Number" style="font-family:Arial, FontAwesome;">
+                            <input type="text" id="fname" name="firstname"
+                                placeholder="&#xf004; Recipient's Name and Surname"
+                                style="font-family:Arial, FontAwesome;">
+                            <input type="text" id="telno" name="telno" placeholder="&#xf3cf; Recipient's Phone Number"
+                                style="font-family:Arial, FontAwesome;" required>
                             <select id="country" name="country">
                                 <option selected>City</option>
                                 <option value="australia">Australia</option>
@@ -64,7 +66,9 @@
                                 <option value="canada">Canada</option>
                                 <option value="usa">USA</option>
                             </select>
-                            <textarea type="text" name="address-detail" placeholder="&#xf3c5; Neighbourhood, street, door number and flat number" style="font-family:Arial, FontAwesome;"></textarea>
+                            <textarea type="text" name="address-detail"
+                                placeholder="&#xf3c5; Neighbourhood, street, door number and flat number"
+                                style="font-family:Arial, FontAwesome;"></textarea>
                             <input type="text" id="fname" name="firstname"
                                 placeholder="Company or School Name (Optional)">
                             <input type="submit" value="Submit">
@@ -76,18 +80,20 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="forward-button">
-                    <button class="forward">
-                        <span>Forward</span>
-                        <span class="right-icon"><i class="fa-solid fa-chevron-right"></i></span>
-                    </button>
-                </div>
+                        <a href="gön-bil.html"> 
+                            <button class="forward">
+                                <span>Forward</span>
+                                <span class="right-icon"><i class="fa-solid fa-chevron-right"></i></span>
+                            </button>
+                        </a>
+                    </div>
 
                     <div class="sipariş-card">
                         <h4 class="text-center">Order Summary</h4>
                         <div class="total">Subtotal (1 Product) 899,00 TL</div>
                         <div class="kod-kupon">
                             <input type="text" class="entercode" name="entercode" placeholder="Enter Code">
-                                <button>Use</button>
+                            <button>Use</button>
                         </div>
                         <div class="total">Total: 899,00 TL</div>
 
