@@ -9,10 +9,6 @@
   justify-content: center;
 }
 
-.back {
-  padding-left: 5rem;
-}
-
 .stage {
   position: relative;
 }
@@ -286,12 +282,35 @@ table tr {
   font-size: 18px;
 }
 
+.bg-leaf {
+  background-color: #feddc6;
+}
+.bg-leaf .leaf-one {
+  width: 30%;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  transform: rotate(180deg);
+  opacity: 0.2;
+  filter: brightness(30%);
+}
+.bg-leaf .leaf-two {
+  width: 30%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: rotate(180deg);
+  opacity: 0.2;
+  filter: brightness(30%);
+}
+
 .message {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 30rem;
+  position: relative;
 }
 .message textarea {
   width: 100%;
@@ -307,6 +326,7 @@ table tr {
   border-radius: 5px;
   padding: 14px 20px;
   font-size: 18px;
+  margin-bottom: 20px;
 }
 
 a {

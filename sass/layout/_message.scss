@@ -2,13 +2,40 @@
 @use "../abstracts/variables" as v;
 
 
+.bg-leaf {
+    background-color: #feddc6;
 
-.message{
+    .leaf-one {
+        width: 30%;
+        position: absolute;
+        top: 0;
+        right: 0px;
+        transform: rotate(180deg);
+        opacity: 0.2;
+        filter: brightness(30%);
+    }
+
+    .leaf-two {
+        width: 30%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: rotate(180deg);
+        opacity: 0.2;
+        filter: brightness(30%);
+    }
+}
+
+
+
+
+.message {
     @include m.center-vertical;
     flex-direction: column;
     width: 30rem;
+    position: relative;
 
-    textarea{
+    textarea {
         width: 100%;
         border: v.$border;
         border-radius: v.$bor-radius;
@@ -16,18 +43,19 @@
     }
 }
 
-.message-buttons{
-    button{
+.message-buttons {
+    button {
         border: 0;
         background-color: v.$color-third ;
         color: white;
         border-radius: v.$bor-radius;
         padding: 14px 20px;
         font-size: 18px;
+        margin-bottom: 20px;
 
     }
 }
 
- a{
+a {
     color: black;
 }
