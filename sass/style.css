@@ -20,8 +20,10 @@
 }
 .stage li span {
   font-size: 15px;
-  position: absolute;
-  bottom: -30px;
+  position: relative;
+  bottom: -50px;
+  right: 15px;
+  text-align: center;
 }
 .stage .line {
   border: 0;
@@ -52,6 +54,9 @@
   height: 40px;
   border-radius: 20px;
   background-color: #d2d6d7;
+}
+.dot-3 span {
+  top: 30px;
 }
 
 .dot-4 {

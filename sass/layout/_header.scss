@@ -21,12 +21,17 @@
     @include m.center;
     list-style: none;
     flex-direction: row;
+
   }
 
   li span {
     font-size: 15px;
-    position: absolute;
-    bottom: -30px;
+    position: relative;
+    bottom: -50px;
+    right: 15px;
+    text-align: center;
+
+   
   }
 
   .line {
@@ -56,6 +61,9 @@
 .dot-3 {
   @include m.dots;
   background-color: v.$color-secondary;
+  span{
+    top: 30px
+  }
 }
 
 .dot-4 {
