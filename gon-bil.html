@@ -23,17 +23,16 @@
     <hr>
 
     <div class="container">
-
         <div class="stage mb-5">
             <span><i class="fa-solid fa-angle-left"></i><a class="text-dark ps-3" href="index.html">Back</a></span>
             <ul>
-                <li class="dot-1"><span>Order Information</span></li>
+                <li class="dot-1"><i class="fa-regular fa-user"></i><span>Order Information</span></li>
                 <hr class="line part-2">
-                <li class="dot-2 part-2"><span>Sender Information</span></li>
+                <li class="dot-2 part-2"><i class="fa-regular fa-id-card"></i><span>Sender Information</span></li>
                 <hr class="line">
-                <li class="dot-3"><span>Payment</span></li>
+                <li class="dot-3"><i class="fa-regular fa-credit-card"></i><span>Payment</span></li>
                 <hr class="line">
-                <li class="dot-4"><span>Message Card</span></li>
+                <li class="dot-4"><i class="fa-solid fa-envelope-open-text"></i><span>Message Card</span></li>
             </ul>
         </div>
     </div>
@@ -82,12 +81,13 @@
                             <div>899,00 TL</div>
                         </div>
                         <div class="kod-kupon">
-                            <input type="text" class="entercode" name="entercode" placeholder="Enter Code">
-                            <button>Use</button>
+                            <label for="discountCode"></label>
+                            <input id="discountCode" type="text" class="entercode" name="entercode" placeholder="Enter Code">
+                            <button onclick="applyDiscount()">Use</button>
                         </div>
                         <div class="total">
                             <div>Total:</div>
-                            <div>899,00 TL</div>
+                            <div id="originalPrice">899,00 TL</div>
                         </div>
                     </div>
                 </div>
@@ -113,7 +113,7 @@
 
 
 
-
+    <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
