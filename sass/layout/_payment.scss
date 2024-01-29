@@ -56,6 +56,9 @@
         border-radius: v.$bor-radius;
         padding: 10px 80px;
         font-size: 20px;
+        a{
+            text-decoration: none;
+        }
     }
 
     p {

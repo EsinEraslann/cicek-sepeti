@@ -1,13 +1,16 @@
 @use "../abstracts/mixins" as m;
 @use "../abstracts/variables" as v;
 
+.message-body {
+    background-color: #feddc6;
+}
+
 
 .bg-leaf {
-    background-color: #feddc6;
 
     .leaf-one {
         width: 30%;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0px;
         transform: rotate(180deg);
@@ -17,7 +20,7 @@
 
     .leaf-two {
         width: 30%;
-        position: absolute;
+        position: fixed;
         bottom: 0;
         left: 0;
         transform: rotate(180deg);

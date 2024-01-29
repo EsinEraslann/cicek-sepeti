@@ -236,6 +236,9 @@ form textarea {
   padding: 10px 80px;
   font-size: 20px;
 }
+.total-pay button a {
+  text-decoration: none;
+}
 .total-pay p {
   font-size: 20px;
 }
@@ -297,12 +300,13 @@ table tr {
   font-size: 18px;
 }
 
-.bg-leaf {
+.message-body {
   background-color: #feddc6;
 }
+
 .bg-leaf .leaf-one {
   width: 30%;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0px;
   transform: rotate(180deg);
@@ -311,7 +315,7 @@ table tr {
 }
 .bg-leaf .leaf-two {
   width: 30%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   transform: rotate(180deg);
